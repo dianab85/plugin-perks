@@ -1,0 +1,7 @@
+{
+    "name": "edealer/ed-dynamic-perks",
+    "type": "wordpress-plugin",
+    "require": {
+        "php": ">=5.3.2"
+    }
+}

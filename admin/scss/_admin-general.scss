@@ -1,0 +1,191 @@
+.ed-admin-mb{
+	label{
+		padding-right: 15px;
+		font-size: 15px;
+		font-weight: 600;
+
+		&.no-padd{
+			padding:0;
+		}
+	}
+
+	.input-sect{
+		padding: 10px 0;
+
+		input{
+			padding: 8px;
+
+			&.med{
+				width:200px;
+			}
+
+			&.lrg{
+				width:400px;
+			}
+
+			&.button{
+				padding: 5px 15px 4px;
+				height:auto;
+			}
+		}
+
+		select{
+			padding: 7px;
+			height:auto;
+		}
+	}
+
+	.img-upload{
+		margin-top:10px;
+		font-size:0;
+
+		.img-preview,.upload{
+			display:inline-block;
+			vertical-align:top;
+			font-size:inherit;
+		}
+
+		.img-preview{
+			img{
+				// max-width:150px;
+				height:150px;
+				border:1px solid #ddd;
+				margin-right:10px;
+			}
+		}
+
+		.upload{
+			.button{
+				margin-right:10px;
+			}
+
+			.img-path{
+				width:250px;
+			}
+		}
+	}
+
+	.input-props{
+		margin-top:5px;
+
+		.input-sect{
+			padding: 5px 0;
+
+			label{
+				font-size:13px;
+			}
+
+			select{
+				padding: 4px;
+			}
+
+			input {
+			    padding: 5px;
+			}
+		}
+	}
+
+	textarea{
+		display:block;
+		width:100%;
+		margin-top:10px;
+	}
+
+	.help-text{
+		position:relative;
+
+		i{
+			font-size: 16px;
+		    display: inline-block;
+		    margin: 0;
+		    vertical-align: middle;
+		    padding: 0 10px;
+		}
+
+		span{
+			display:none;
+		}
+
+		&:hover{
+			span{
+				display: block;
+				position: absolute;
+				padding: 10px;
+				border: 1px solid #eee;
+				left: 40px;
+				top: -10px;
+				width: 400px;
+				background: #f7f7f7; 
+				z-index: 9;
+				font-size:12px;
+
+				&:after{
+					content:"";
+					position:absolute;
+					top: 10px;
+					left:-9px;
+					width: 0; 
+					height: 0; 
+					border-top: 10px solid transparent;
+					border-bottom: 10px solid transparent; 
+					border-right:10px solid #f7f7f7; 
+				}
+
+				&:before{
+					content:"";
+					position:absolute;
+					top: 10px;
+					left:-10px;
+					width: 0; 
+					height: 0; 
+					border-top: 10px solid transparent;
+					border-bottom: 10px solid transparent; 
+					border-right:10px solid #eee; 
+				}
+			}
+		}
+	}
+
+	.internal-active {
+		.ext-link-field {
+			display: none;
+		}
+	}
+
+	.external-active {
+		position:relative;
+		display: inline-block;
+		vertical-align: middle;
+
+		.ext-link-field {
+			display:inline-block;
+			position:relative;
+		}
+
+		.int-link-field {
+			display: none;
+		}
+
+		.under{
+			position: absolute;
+			left: 0;
+			margin-top: 5px;
+			bottom: -22px;
+			white-space: nowrap;
+
+			input[type=checkbox]{
+				width:auto;
+				vertical-align:middle;
+				display:inline-block;
+				margin: 5px 0;
+			}
+
+			label{
+				font-size: 10px;
+				vertical-align:middle;
+				display:inline-block;
+			}
+		}
+	}
+}
+

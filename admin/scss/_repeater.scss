@@ -1,0 +1,161 @@
+#ed-promo-details-metabox ul.repeater {
+	padding-top: 10px;
+
+	& > li {
+		width:100%;
+		max-width:758px;
+		position: relative;
+		padding-right: 153px;
+		margin-bottom: 20px;
+		padding-bottom: 20px;
+		display: inline-block;
+		border-bottom: 1px dashed #ddd;
+		box-sizing:border-box;
+
+		& > select, & > input{
+			vertical-align:top;
+			width:100%;
+		}
+
+		&:last-child {
+			border-bottom: none;
+			padding-bottom: 0px;
+		}
+
+		&.gallery-item{
+			padding-right: 0;
+
+			.button{
+				display: block;
+			}
+
+			.input-text{
+				width: 100%;
+			}
+		}
+	}
+
+	.input-text {
+		width: 24%;
+		display: inline-block;
+
+		&.external-link-field, &.internal-link-field {
+			width: 24%;
+		}
+	}
+
+	p.note {
+		font-size: 12px;
+		font-style: italic;
+		padding-left: 20px;
+		position: relative;
+		margin: 5px 0;
+		color: #888;
+
+		i.icon-info {
+			position: absolute;
+			left: 0;
+			top: 3px;
+		}
+	}
+
+	.repeat-delete-sect {
+		position: absolute;
+		right: 0;
+		top: 1px;
+	}
+
+	.delete-me, .repeat-me {
+		background: #aaa;
+		padding: 9px 15px;
+		color: #fff;
+		cursor: pointer;
+		margin: 0 0 0 5px;
+		display: inline-block;
+	}
+
+	.repeat-me {
+		display: none;
+		background: #006790;
+	}
+
+	.last-item {
+		.repeat-me {
+			display: inline-block;
+		}
+	}
+
+	.int-link-field{
+		width: 30.33%;
+		margin-right: 1%;
+	}
+
+	.ext-link-field {
+		width: 30.33%;
+		margin-right: 1%;
+		position:relative;
+		display:inline-block;
+
+		input{
+			width:100%;
+		}
+
+		.under{
+			position: absolute;
+			left: 0;
+			margin-top: 5px;
+			bottom: -22px;
+			white-space: nowrap;
+
+			input[type=checkbox]{
+				width:auto;
+				vertical-align:middle;
+				display:inline-block;
+				margin: 5px 0;
+			}
+
+			label{
+				font-size: 10px;
+				vertical-align:middle;
+				display:inline-block;
+			}
+		}
+	}
+
+	/*Overides*/
+	&.promo-details{
+		li{
+			input{
+				width:30.33%;
+				margin-right:1%;
+			}
+		}
+	}
+
+	&.promo-links{
+		li{
+			& > input, & > select{
+				width:30.33%;
+				margin-right:1%;
+			}
+		}
+	}
+
+	.internal-active {
+		.ext-link-field {
+			display: none;
+		}
+	}
+
+	.external-active {
+		.int-link-field {
+			display: none;
+		}
+	}
+
+	.print-active{
+		.ext-link-field,.int-link-field {
+			display: none;
+		}
+	}
+}

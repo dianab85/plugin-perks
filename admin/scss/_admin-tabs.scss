@@ -1,0 +1,64 @@
+#ed-dynam-perk-details-metabox{
+	.inside {
+	    margin: 0;
+	    padding: 0;
+	}
+}
+
+.ed-admin-mb{
+	display:table-row;
+
+	.nav-tab-wrapper {
+		border-bottom: 0;
+		padding-bottom: 0;
+		padding-left: 0;
+		display: table-cell;
+		vertical-align: top;
+		background-color: #eee;
+		border-right:none;
+
+		&.page-disabled{
+			.nav-tab.page{
+				display:none;
+			}
+		}
+	}
+
+	.nav-tab {
+		display:block;
+		background-color: #eee;
+		float: none;
+		font-size: 15px;
+		cursor: pointer;
+		padding: 6px 30px;
+		font-weight: 700;
+		line-height: 24px;
+		margin: 0;
+		border: 0;
+		border-bottom:1px solid #ddd;
+		width:90px;
+
+		&.active {
+			background-color: #fff;
+			color:#0085ba;
+		}
+
+	}
+
+	.group{
+		width:100%;
+		display: none;
+		background: #fff;
+		border-left:0;
+		padding: 10px 30px;
+
+		&.active{
+			display: table-cell;
+			vertical-align: top;
+		}
+
+		ul{
+			margin: 0;
+		}
+	}
+}
