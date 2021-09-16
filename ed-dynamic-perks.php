@@ -33,7 +33,7 @@ function ed_dynam_perks_init() {
 		'supports'		    => array('sortable'),
 		'menu_position' 	=> 5,
 		'menu_icon'         => 'dashicons-share-alt2',
-		//'taxonomies'		=> array('post_tag', 'category'),
+		'taxonomies'		=> array('post_tag', 'category'),
 		'description'		=> __('Specific Dynamic Perk Pages'),
 		'public'			=> true,
 		'has_archive'       => false,
@@ -51,7 +51,6 @@ function ed_dynam_perks_admin_script_style($hook) {
 		wp_enqueue_script('jquery-ui-sortable');
 		wp_enqueue_script( 'jquery-ui-datepicker' );
 		wp_enqueue_style( 'ed-dynam-perks-icon-file', 'http://websites.edealer.ca/assets/icons/ed-icons/style.css', false, '10', 'all' );
-		wp_enqueue_style( 'jquery-ui-datepicker', 'http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/themes/smoothness/jquery-ui.css' );
 		wp_enqueue_style( 'ed-dynam-perks-admin-css', plugins_url( '', __FILE__) . '/admin/css/admin.css' );
 		wp_register_script( 'ed-dynam-perks-admin', plugins_url( '', __FILE__) . '/admin/js/admin.js?vers1.1',array( 'jquery-ui-sortable' ),'1', true );
 		wp_register_script( 'ed-dynam-perks-media-uploader', plugins_url( '', __FILE__) . '/admin/js/media-uploader.js' );
