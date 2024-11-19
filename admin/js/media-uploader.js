@@ -6,15 +6,11 @@
     var file_frame, image_data, galleryIndex, urlString, clicked;
 
     $(function() {
+
         $('.group').on( 'click', '.button-upload', function(e) {
             clicked = $(this);
             e.preventDefault();
-            // galleryIndex = $(this).parents('.gallery-item').index();
-            // console.log(galleryIndex);
-            /**
-             * If an instance of file_frame already exists, then we can open it
-             * rather than creating a new instance.
-             */
+           
             // If the media frame already exists, reopen it.
             if ( file_frame ) {
                 file_frame.open();
@@ -54,8 +50,7 @@
                 } else if(urlString.indexOf('.com/') > 1){
                     urlString = urlString.substring(urlString.lastIndexOf(".com") + 4);
                 }
-                console.log(urlString);
-                //$('input[data-target="gallery-item-' + galleryIndex + '"]').val(urlString);
+               
                 $(clicked).parents('.input-sect').find('input[type="text"]').val(urlString);
                 $(clicked).parents('.input-sect').find('.img-preview').empty();
                 $(clicked).parents('.input-sect').find('.img-preview').append('<img src="' + urlString + '" />');
@@ -67,7 +62,7 @@
         });
 
         $('.group').on('click', '.button-clear', function(e){
-            //$(this).parents('li.gallery-item').find('input[type="text"]').val('');
+            
             $(this).parents('.input-sect').find('input[type="text"]').val('');
             $(this).parents('.input-sect').find('.img-preview').empty();
         });

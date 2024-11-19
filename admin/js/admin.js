@@ -54,7 +54,7 @@
 	     * Repeatable Function
 	     */
 	    $('.group').on('click', ".repeat-me", function(){
-	        var funcType = 'repeat';
+	        
 	        var clonedField = $(this).parents('.repeater li').clone();
 
 	       	$.each(inputType, function(i, type) {
@@ -88,7 +88,7 @@
 	        	}
 	        });
 
-	        console.log(itemsVisible);
+	        
 	        if(itemsVisible == 1){
 		        var deletedField = $(this).parents('.repeater li');
 	        } else {
